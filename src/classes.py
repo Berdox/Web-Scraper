@@ -27,7 +27,7 @@ class Core:
     Shell_Defense = ''
     Energy_Defense = ''
     Max_Weight = ''
-    Anti_Missile_Reponse = ''	
+    Anti_Missile_Response = ''	
     Anti_Missile_Angle = ''	
     Extension_Slots = ''
     Flavor_Text = ''
