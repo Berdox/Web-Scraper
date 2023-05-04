@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import re
 
 mapping = ['Head Parts',
             'Core Units',
@@ -9,6 +10,7 @@ mapping = ['Head Parts',
             'FCS (Fire Control Systems)',
             'Boosters']
 
+pattern = '^Name|^Type|^Price|^Weight|^Energy\sDrain|^Armor\sPoint|^Shell\sDefense|^Energy\sDefense|^Computer\sType|^Map\sType|^Noise\sCanceller|^Bio\sSensor|^Radar\sFunction|^Radar\sRange|^Radar\sType|^Flavor\sText|^Energy\sOutput|^Maximum\sCharge|^Maximum\sLock|^Boost\sPower|^RedZone\sCharge|^Lock\sType|^Charge\sDrain|^Max\sWeight|^Anti-Missile\sReponse|^Anti-Missile\sAngle|^Extension\s(Option)\sSlots|^Speed|^Stability|^Jump\sFunction'
 parts = []
 
 html_text = requests.get('https://www.reddit.com/r/armoredcore/comments/7ankkf/armored_core_1_guide_armor_and_internal_part/').text
