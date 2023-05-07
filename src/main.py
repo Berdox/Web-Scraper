@@ -14,9 +14,9 @@ parser = argparse.ArgumentParser(description='Scrapes HTML from a website')
 parser.add_argument('-t','--tags', nargs='+',
                     help='Tags for the scraper to look for; If left empty will return all of html')
 parser.add_argument('-rt','--rmtag', action='store_true',
-                    help='Will remove the tags and be left with text')
+                    help='Will remove the html tags and be left with text')
 parser.add_argument('-wt','--writetag', nargs='+',
-                    help='Will write the output to a file named whar you passed for the argument')
+                    help='Will write the output to a file named whatever you passed for the argument')
 parser.add_argument('-l','--link', nargs='?', 
                     help='The link for the website for the scraper to pull from; will only take first link')
 
