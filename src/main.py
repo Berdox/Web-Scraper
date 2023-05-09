@@ -37,16 +37,16 @@ else:
     if(args.rmtag):
         for tag in collection:
             print(tag.text, sep="\n")
-        if(args.writetag is not None):
-            writeFile(args.writetag, tag.text)
-        if(args.writetag is None):
-            print('Need to include filename to write to file')
-            exit()
+        #if(args.writetag is not None):
+        #    writeFile(args.writetag, tag.text)
+        #if(args.writetag is None):
+        #    print('Need to include filename to write to file')
+        #    exit()
     else:
         for tag in collection:
             print(tag, sep="\n") 
-        if(args.writetag is not None):
-            writeFile(args.writetag, tag)
-        if(args.writetag is None):
-            print('Need to include filename to write to file')
-            exit()
+        #if(args.writetag is not None):
+        #    writeFile(args.writetag, tag)
+        #if(args.writetag is None):
+        #    print('Need to include filename to write to file')
+        #   exit()
